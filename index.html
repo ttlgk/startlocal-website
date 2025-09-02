@@ -1,1 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StartLocal LLC</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Basic Reset & Fonts */
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      background: #f9fafb;
+      color: #333;
+    }
+    header {
+      background: #111827;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1.2rem;
+      color: #9ca3af;
+    }
+    nav {
+      margin-top: 1rem;
+    }
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #f3f4f6;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #60a5fa;
+    }
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    section {
+      margin-bottom: 3rem;
+    }
+    h2 {
+      color: #1f2937;
+      margin-bottom: 1rem;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #111827;
+      color: #9ca3af;
+      font-size: 0.9rem;
+    }
+    .btn {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      background: #2563eb;
+      color: white;
+      text-decoration: none;
+      border-radius: 0.5rem;
+      transition: background 0.3s ease;
+    }
+    .btn:hover {
+      background: #1d4ed8;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>StartLocal LLC</h1>
+    <p>Building Local Business, Together</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
+  <main>
+    <section id="about">
+      <h2>About Us</h2>
+      <p>
+        StartLocal LLC is dedicated to empowering local entrepreneurs, community projects, 
+        and small businesses. We provide support, resources, and opportunities to help ideas 
+        grow and thrive in our region.
+      </p>
+    </section>
+
+    <section id="services">
+      <h2>Our Services</h2>
+      <ul>
+        <li>Business incubation and startup support</li>
+        <li>Event planning and community engagement</li>
+        <li>Partnership development</li>
+        <li>Resource sharing and networking</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>
+        Have questions or want to collaborate? Get in touch with us today.
+      </p>
+      <p><strong>Email:</strong> hello@startlocal.llc</p>
+      <a class="btn" href="mailto:hello@startlocal.llc">Send us an email</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> StartLocal LLC. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Auto-update footer year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
