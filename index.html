@@ -7,31 +7,125 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>Start Local</h1>
-    <p class="subtitle">Management Consultancy & Small Business Incubator</p>
-    <a href="#contact" class="btn primary-btn">Get in Touch</a>
+  <header class="site-header">
+    <div class="shell">
+    </div>
   </header>
 
   <main>
-    <section class="feature">
-      <h2>About Start Local</h2>
-      <p>Founded in 2022 with the mission of supporting small business development in rural communities, Start Local is at home in Alpine Texas. Offering consultancy services to business owners and incubating startups focused on increasing the quality of life for residents in Alpine, Start Local aims to boost hiring prospects and talent retention in the Big Bend.</p>
-      <p>Start Local is the driving force behind the Granada Theatre, La Sala Studio, Alcove Social, and the Kishmish Plaza.</p>
-      <p>If you would like to participate in shaping the future of our high desert community, please reach out to collaborate. Whether you are helping us or we are helping you, alignment is key to our joint success.</p>
+    <section id="about" class="section">
+      <div class="shell">
+        <div class="section-header" data-animate="fade-up">
+          <h2>About Start Local</h2>
+          <p class="section-intro">
+            Founded in 2022, Start Local supports small business development in rural communities
+            from our home base in Alpine, Texas, in the heart of the Chihuahuan Desert.
+          </p>
+        </div>
+        <div class="two-column">
+          <div class="column" data-animate="fade-up">
+            <p>
+              We work alongside business owners, founders, and community partners to incubate
+              projects that increase quality of life for residents and create durable
+              opportunities for work and creativity in the Big Bend.
+            </p>
+          </div>
+          <div class="column" data-animate="fade-up">
+            <p>
+              Start Local is the driving force behind the Granada Theatre, La Sala Studio,
+              Alcove Social, and Kishmish&mdash;a growing portfolio of spaces and experiences
+              rooted in Alpine and the surrounding region.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="contact" class="feature">
-      <h2>Contact Us</h2>
-      <p>Please reach out to us and let us know if there is anything we can do for you or if you would like to get involved in our ongoing projects.</p>
-      <a href="mailto:info@startlocal.llc" class="btn">Email Us</a>
+    <section id="portfolio" class="section section-alt">
+      <div class="shell">
+        <div class="section-header" data-animate="fade-up">
+          <h2>Portfolio Overview</h2>
+          <p class="section-intro">
+            A snapshot of the venues, studios, and community concepts Start Local stewards.
+          </p>
+        </div>
+
+        <div class="portfolio-grid">
+          <article class="portfolio-card portfolio-card--alcove" data-animate="fade-up">
+            <h3>Alcove Social</h3>
+            <p>
+              A gathering place for locals and visitors to connect, unwind, and share what makes
+              Alpine special.
+            </p>
+            <a href="https://alcove.social" class="card-link" target="_blank" rel="noopener noreferrer">
+              Visit alcove.social
+            </a>
+          </article>
+
+          <article class="portfolio-card portfolio-card--granada" data-animate="fade-up">
+            <h3>Granada Theatre</h3>
+            <p>
+              A historic theatre reimagined as a hub for live events, film, and cultural
+              programming in the high desert.
+            </p>
+            <a href="https://granadatheatre.events" class="card-link" target="_blank" rel="noopener noreferrer">
+              Visit granadatheatre.events
+            </a>
+          </article>
+
+          <article class="portfolio-card portfolio-card--lasala" data-animate="fade-up">
+            <h3>La Sala Studio</h3>
+            <p>
+              A flexible studio environment for artists, small productions, and creative
+              collaborations in Alpine.
+            </p>
+            <a href="https://lasala.studio" class="card-link" target="_blank" rel="noopener noreferrer">
+              Visit lasala.studio
+            </a>
+          </article>
+
+          <article class="portfolio-card portfolio-card--kishmish" data-animate="fade-up">
+            <h3>Kishmish Plaza</h3>
+            <p>
+              An evolving event concept and plaza space designed for markets, celebrations, and
+              community-centered gatherings.
+            </p>
+            <a href="https://kishmish.events" class="card-link" target="_blank" rel="noopener noreferrer">
+              Visit kishmish.events
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="shell">
+        <div class="section-header" data-animate="fade-up">
+          <h2>Contact</h2>
+          <p class="section-intro">
+            Interested in collaborating, investing, or bringing a new idea to life in Alpine?
+          </p>
+        </div>
+
+        <div class="contact-card" data-animate="fade-up">
+          <p>
+            Please reach out and let us know how we can support your work, or how you would like
+            to get involved in our ongoing projects and spaces.
+          </p>
+          <a href="mailto:info@startlocal.llc" class="btn primary-btn">Email info@startlocal.llc</a>
+        </div>
+      </div>
     </section>
   </main>
 
   <footer>
-    <p>&copy; <span id="year"></span> Start Local LLC. All rights reserved.</p>
+    <div class="shell footer-inner">
+      <p>&copy; <span id="year"></span> Start Local LLC. All rights reserved.</p>
+      <p class="footer-meta">Alpine, Texas &middot; Big Bend Region</p>
+    </div>
   </footer>
 
+  <script src="script.js" defer></script>
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
